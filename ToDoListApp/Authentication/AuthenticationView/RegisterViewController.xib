@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="ToDoListApp" customModuleProvider="target">
+            <connections>
+                <outlet property="txtEmail" destination="Ku7-UE-YYL" id="2dZ-Kw-V73"/>
+                <outlet property="txtPassword" destination="vho-o0-PVL" id="2dc-41-Mfl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWa-K3-d5H">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-8W-98X">
+                            <rect key="frame" x="15" y="15" width="363" height="294"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-Jl-cKU">
+                                    <rect key="frame" x="0.0" y="0.0" width="363" height="81.666666666666671"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a tu aplicacion de tareas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHP-gi-EMh">
+                                            <rect key="frame" x="0.0" y="0.0" width="363" height="81.666666666666671"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="QHP-gi-EMh" firstAttribute="top" secondItem="zfG-Jl-cKU" secondAttribute="top" id="BEu-XP-kZr"/>
+                                        <constraint firstAttribute="trailing" secondItem="QHP-gi-EMh" secondAttribute="trailing" id="If7-GV-YHa"/>
+                                        <constraint firstItem="QHP-gi-EMh" firstAttribute="leading" secondItem="zfG-Jl-cKU" secondAttribute="leading" id="PUt-6h-c7g"/>
+                                        <constraint firstAttribute="bottom" secondItem="QHP-gi-EMh" secondAttribute="bottom" id="stQ-x2-c0i"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-BD-u6E">
+                                    <rect key="frame" x="0.0" y="96.666666666666657" width="363" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrate para poder disfrutar de una experiencia completa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7q-nM-BJE">
+                                            <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="K7q-nM-BJE" firstAttribute="leading" secondItem="9o9-BD-u6E" secondAttribute="leading" id="5cK-Mi-GIn"/>
+                                        <constraint firstItem="K7q-nM-BJE" firstAttribute="top" secondItem="9o9-BD-u6E" secondAttribute="top" id="Ai4-zr-3JQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="K7q-nM-BJE" secondAttribute="bottom" id="eIk-SC-44X"/>
+                                        <constraint firstAttribute="trailing" secondItem="K7q-nM-BJE" secondAttribute="trailing" id="hGf-Cy-AuU"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agrega Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ku7-UE-YYL">
+                                    <rect key="frame" x="0.0" y="161.66666666666666" width="363" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agrega Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vho-o0-PVL">
+                                    <rect key="frame" x="0.0" y="210.66666666666669" width="363" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxE-a8-Eeb">
+                                    <rect key="frame" x="0.0" y="259.66666666666669" width="363" height="34.333333333333314"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Registrar"/>
+                                    <connections>
+                                        <action selector="registerActionBtn:" destination="-1" eventType="touchUpInside" id="ktD-K9-5DW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pHH-8W-98X" secondAttribute="trailing" constant="15" id="2Nq-kL-qzQ"/>
+                        <constraint firstItem="pHH-8W-98X" firstAttribute="top" secondItem="kWa-K3-d5H" secondAttribute="top" constant="15" id="VXR-J3-1Sp"/>
+                        <constraint firstItem="pHH-8W-98X" firstAttribute="leading" secondItem="kWa-K3-d5H" secondAttribute="leading" constant="15" id="Wdw-8x-pTD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kWa-K3-d5H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6jC-Tt-mJn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kWa-K3-d5H" secondAttribute="bottom" id="JCH-4q-NlR"/>
+                <constraint firstItem="kWa-K3-d5H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bt8-0j-xId"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kWa-K3-d5H" secondAttribute="trailing" id="mUA-k2-Tay"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

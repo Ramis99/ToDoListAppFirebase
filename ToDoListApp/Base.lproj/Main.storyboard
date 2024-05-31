@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHv-Xt-SXn">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dY-Jx-UXK">
+                                <rect key="frame" x="106" y="207" width="181" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="envelope.fill" catalog="system" title="Entra con email" imagePadding="8"/>
+                                <connections>
+                                    <action selector="loginActionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYK-HU-oTK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkc-nd-fyX">
+                                <rect key="frame" x="89.666666666666686" y="300" width="214" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="envelope.fill" catalog="system" title="Entra con Facebook" imagePadding="8"/>
+                                <connections>
+                                    <action selector="loginWithFacebookActionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXN-b3-wCo"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPc-bD-Daa">
+                                <rect key="frame" x="20" y="406" width="353" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPe-4U-Xh6">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="¿No tienes cuenta? Registrate"/>
+                                        <connections>
+                                            <action selector="registerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKn-O8-Dn5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fPe-4U-Xh6" secondAttribute="trailing" id="MfA-em-rzR"/>
+                                    <constraint firstAttribute="bottom" secondItem="fPe-4U-Xh6" secondAttribute="bottom" id="SrN-rh-dfe"/>
+                                    <constraint firstItem="fPe-4U-Xh6" firstAttribute="leading" secondItem="bPc-bD-Daa" secondAttribute="leading" id="gBN-ER-wH1"/>
+                                    <constraint firstItem="fPe-4U-Xh6" firstAttribute="top" secondItem="bPc-bD-Daa" secondAttribute="top" id="lCm-AA-Ed3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lkc-nd-fyX" firstAttribute="top" secondItem="0dY-Jx-UXK" secondAttribute="bottom" constant="58" id="89v-cX-Tdg"/>
+                            <constraint firstItem="bPc-bD-Daa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8PM-r9-cGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bPc-bD-Daa" secondAttribute="trailing" constant="20" id="Lgu-Id-QM7"/>
+                            <constraint firstItem="0dY-Jx-UXK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="TdY-0b-UjZ"/>
+                            <constraint firstItem="0dY-Jx-UXK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dVL-Px-bfR"/>
+                            <constraint firstItem="lkc-nd-fyX" firstAttribute="centerX" secondItem="0dY-Jx-UXK" secondAttribute="centerX" id="eY4-RJ-6WZ"/>
+                            <constraint firstItem="bPc-bD-Daa" firstAttribute="top" secondItem="lkc-nd-fyX" secondAttribute="bottom" constant="71" id="oxg-57-bTe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q3l-bo-IBg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.763358778626" y="-10.563380281690142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nnc-Av-DZE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zHv-Xt-SXn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="frv-Gc-cBG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3be-Ki-6BI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2H-ke-JOS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74.045801526717554" y="-10.563380281690142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="envelope.fill" catalog="system" width="128" height="85"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

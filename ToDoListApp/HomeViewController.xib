@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ToDoListApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijf-tA-v6F">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SkZ-mg-zi6">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="81.666666666666671"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido a tu App de Tareas numero Uno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-Kn-BgF">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="81.666666666666671"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="bjw-Kn-BgF" secondAttribute="trailing" id="FFW-Uo-85e"/>
+                                <constraint firstAttribute="bottom" secondItem="bjw-Kn-BgF" secondAttribute="bottom" id="bsU-X0-Bju"/>
+                                <constraint firstItem="bjw-Kn-BgF" firstAttribute="leading" secondItem="SkZ-mg-zi6" secondAttribute="leading" id="pji-Py-hEx"/>
+                                <constraint firstItem="bjw-Kn-BgF" firstAttribute="top" secondItem="SkZ-mg-zi6" secondAttribute="top" id="zHr-9j-aGR"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4z7-NJ-M9X">
+                            <rect key="frame" x="23" y="96.666666666666657" width="347" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Cerrar Sesión"/>
+                            <connections>
+                                <action selector="logoutActionBtn:" destination="-1" eventType="touchUpInside" id="YhT-G3-Ckl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="4z7-NJ-M9X" firstAttribute="leading" secondItem="ijf-tA-v6F" secondAttribute="leadingMargin" constant="15" id="B7Q-QW-dsv"/>
+                        <constraint firstItem="4z7-NJ-M9X" firstAttribute="top" secondItem="SkZ-mg-zi6" secondAttribute="bottom" constant="15" id="Bbb-kh-AbI"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="4z7-NJ-M9X" secondAttribute="trailing" constant="15" id="Lzx-Rp-WL3"/>
+                        <constraint firstAttribute="trailing" secondItem="SkZ-mg-zi6" secondAttribute="trailing" id="agl-pu-t7y"/>
+                        <constraint firstItem="SkZ-mg-zi6" firstAttribute="leading" secondItem="ijf-tA-v6F" secondAttribute="leading" id="bmk-Ne-pqR"/>
+                        <constraint firstItem="SkZ-mg-zi6" firstAttribute="top" secondItem="ijf-tA-v6F" secondAttribute="top" id="l1u-wU-fgy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ijf-tA-v6F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HPi-hh-du2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ijf-tA-v6F" secondAttribute="bottom" id="JsR-SK-imW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ijf-tA-v6F" secondAttribute="trailing" id="Ky6-pF-BkU"/>
+                <constraint firstItem="ijf-tA-v6F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YDR-jY-i2V"/>
+            </constraints>
+            <point key="canvasLocation" x="-33" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
